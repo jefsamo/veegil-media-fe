@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
@@ -39,7 +40,7 @@ const initialState: initialStateType = {
     role: "",
     password: "",
   },
-  login: (email: string, password: string) => {},
+  login: (_email: string, _password: string) => {},
   logout: () => {},
   isAuthenticated: false,
 };

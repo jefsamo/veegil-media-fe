@@ -10,10 +10,8 @@ const ProtectedRoute = ({ children }: Props) => {
   // const { isAuthenticated, isLoading } = useUser();
   const isAuth = localStorage.getItem("isAuthenticated");
   console.log(isAuth);
-  const [isAuthenticated, setIsAuthenticated] = useState(
-    isAuth === "true" ? true : false
-  );
-  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [isAuthenticated] = useState(isAuth === "true" ? true : false);
+  const [isLoading] = useState<boolean>(false);
   const navigate = useNavigate();
 
   useEffect(() => {
