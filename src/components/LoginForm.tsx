@@ -23,9 +23,9 @@ export function AuthenticationForm(props: PaperProps) {
 
   const form = useForm({
     initialValues: {
-      email: "adegokep4@gmail.com",
+      email: "hr@veegil.com",
       name: "",
-      password: "12345678",
+      password: "veegilmedia",
       terms: true,
     },
 
