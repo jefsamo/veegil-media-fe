@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.header a {
+  text-decoration: none;
+  font-family: Poppins, serif;
+  color: black;
+}
+
+.nav-links a {
+  margin: 0 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: rgb(103, 100, 100);
+}
