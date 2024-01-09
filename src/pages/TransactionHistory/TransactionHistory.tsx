@@ -38,7 +38,7 @@ const TransactionHistory = () => {
       // console.log(transactions);
     };
     getHistory();
-  }, [transactions]);
+  }, [token]);
 
   const rows = transactions.map((transaction: User) => (
     <Table.Tr key={transaction._id}>

@@ -9,7 +9,6 @@ type Props = {
 const ProtectedRoute = ({ children }: Props) => {
   // const { isAuthenticated, isLoading } = useUser();
   const isAuth = localStorage.getItem("isAuthenticated");
-  console.log(isAuth);
   const [isAuthenticated] = useState(isAuth === "true" ? true : false);
   const [isLoading] = useState<boolean>(false);
   const navigate = useNavigate();
