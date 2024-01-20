@@ -1,0 +1,6 @@
+sudo:required
+services:
+  - docker
+
+before_install:
+  - docker build -t shopeyin5/veegil-media-fe -f Dockerfile.dev .
