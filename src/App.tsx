@@ -12,6 +12,7 @@ import Register from "./pages/Register/Register";
 import { Toaster } from "react-hot-toast";
 import ReactGA from "react-ga";
 import { useEffect } from "react";
+
 const TRACKING_ID = import.meta.env.VITE_GOOGLE_ANALYTICS as string; // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
