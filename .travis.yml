@@ -5,6 +5,9 @@ services:
 before_install:
   - docker build -t shopeyin5/veegil-media-fe -f Dockerfile.dev .
 
+script:
+  - docker run -e CI=true shopeyin5/veegil-media-fe npm run dev
+
 deploy:
   provider: elasticbeanstalk
   region: "eu-north-1"
