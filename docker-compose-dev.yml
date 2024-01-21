@@ -3,7 +3,7 @@ services:
   veegil-media:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.dev
     ports:
       - "8000:5173"
     volumes:

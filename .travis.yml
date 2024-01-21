@@ -4,3 +4,15 @@ services:
 
 before_install:
   - docker build -t shopeyin5/veegil-media-fe -f Dockerfile.dev .
+
+deploy:
+  provider: elasticbeanstalk
+  region: "eu-north-1"
+  app: "veegil-media"
+  env: "Veegil-media-env"
+  bucket_name: "elasticbeanstalk-eu-north-1-211125427285"
+  bucket_path: "veegil-media"
+  on:
+    branch: main
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: "$AWS_SECRET_KEY"
