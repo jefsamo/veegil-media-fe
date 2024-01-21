@@ -11,8 +11,8 @@ deploy:
   app: "veegil-media"
   env: "Veegil-media-env"
   bucket_name: "elasticbeanstalk-eu-north-1-211125427285"
-  bucket_path: "veegil-media"
-  on:
+  bucket_path: ".elasticbeanstalk"
+    on:
     branch: main
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: "$AWS_SECRET_KEY"
